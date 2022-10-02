@@ -28,7 +28,7 @@ make it easy to run on any machine.<br/>
 
 Dataset
 -------------------------------------------------------------------------
-This dataset contains a mix of legitimate Bitcoin transactions and illicit ones (Ransomeware). It was constructed using a graph representation of both licit and illicit ransomware transactions. It’s a directed weighted graph created from a set of transactions and
+This dataset contains a mix of legitimate Bitcoin transactions and illicit ones (Ransomeware). It was constructed using a graph representation of both licit and illicit ransomware transactions. It’s a directed weighted graph created from a set of transactions and
 input/output addresses. There are 2 types of nodes: address node and transaction node, and
 edges represent coin transfers between an address node and a transaction node, and edges
 do not link two nodes of the same type. Data from 2009 January to 2018 December was
@@ -48,16 +48,16 @@ Machine learning models used
 Data sampling
 -------------------------------------------------------------------------
 The biggest problem encountered in this project is the imbalance between the two classes (licit/illicit) in this dataset. So we had to use these data sampling techniques to address this issue. We used 3 approaches :
-- <b>Random undersampling : </b>This is a method that seeks to randomly select and remove samples from the majority class, consequently reducing the number of examples in the majority class in the
+- <b>Random undersampling : </b>This is a method that seeks to randomly select and remove samples from the majority class, consequently reducing the number of examples in the majority class in the
 transformed data. In circumstances where the minority class has a significant number
 of examples despite the great imbalance, this technique is beneficial. On the other
-hand, because we have no method of detecting or preserving the cases that are information rich in the majority class, it is always necessary to consider the possibility of
+hand, because we have no method of detecting or preserving the cases that are information rich in the majority class, it is always necessary to consider the possibility of
 significant information being lost when we eliminate them from our data collection at
 random. <p align="center">
   <img width=500 height=400 src="https://user-images.githubusercontent.com/58670521/193468548-c25dd901-1bfd-4e2b-a595-eb8aaa6f940b.jpg">
 </p> <br/>
 - <b>Random Oversampling using SMOTE : </b>It is a method of over-sampling in which the minority class is over-sampled by using
-"synthetic" instances rather than replacement over-sampling. We develop synthetic examples in "feature space" rather than "data space," which makes them less applicationspecific. By taking each minority class sample and inserting synthetic samples along
+"synthetic" instances rather than replacement over-sampling. We develop synthetic examples in "feature space" rather than "data space," which makes them less application specific. By taking each minority class sample and inserting synthetic samples along
 the line segments connecting any/all of the k minority class nearest neighbours, the
 minority class is over-sampled. Neighbours from the k closest neighbours are picked at
 random depending on the quantity of over-sampling necessary.
