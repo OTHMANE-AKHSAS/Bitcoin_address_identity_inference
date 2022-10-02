@@ -93,7 +93,7 @@ important metric is F1-score, it’s a harmonic mean between recall and precisio
 what we want to quantify the trade-off between our two main scores, and decide what best
 fits for our needs. <br/>
 In our dataset, we have a big imbalance between the two classes, and of course the minority
-class is what we try to predict.![Screenshot_23]()
+class is what we try to predict.
 
 
 Results
