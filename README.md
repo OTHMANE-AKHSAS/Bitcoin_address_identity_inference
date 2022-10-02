@@ -18,12 +18,12 @@ are fraudulent or not. The app is composed of 3 parts:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/58670521/193467827-fbcf942c-661e-45c4-b7b5-a9a0a703be9e.jpg">
 </p>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>Frontend :</b> The frontend part will be developped using React js and it’s going to be
-a simple we page where the user enters a Bitcoin address and expects a response.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>REST API :</b> Constructed using Flask, the API will be using a trained machine learning
-model in order to predict if the entered Bitcoin address is illicit or not.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>Containerization :</b> Using Docker we will containerize both parts of our app, so as to
+
+- <b>Frontend :</b> The frontend part will be developped using React js and it’s going to be
+a simple we page where the user enters a Bitcoin address and expects a response.
+- <b>REST API :</b> Constructed using Flask, the API will be using a trained machine learning
+model in order to predict if the entered Bitcoin address is illicit or not.
+- <b>Containerization :</b> Using Docker we will containerize both parts of our app, so as to
 make it easy to run on any machine.<br/>
 
 Dataset
@@ -53,9 +53,10 @@ transformed data. In circumstances where the minority class has a significant nu
 of examples despite the great imbalance, this technique is beneficial. On the other
 hand, because we have no method of detecting or preserving the cases that are information rich in the majority class, it is always necessary to consider the possibility of
 significant information being lost when we eliminate them from our data collection at
-random. <p align="center">
+random.<p align="center">
   <img width=500 height=400 src="https://user-images.githubusercontent.com/58670521/193468548-c25dd901-1bfd-4e2b-a595-eb8aaa6f940b.jpg">
-</p> <br/>
+</p>
+
 - <b>Random Oversampling using SMOTE : </b>It is a method of over-sampling in which the minority class is over-sampled by using
 "synthetic" instances rather than replacement over-sampling. We develop synthetic examples in "feature space" rather than "data space," which makes them less application specific. By taking each minority class sample and inserting synthetic samples along
 the line segments connecting any/all of the k minority class nearest neighbours, the
@@ -63,7 +64,8 @@ minority class is over-sampled. Neighbours from the k closest neighbours are pic
 random depending on the quantity of over-sampling necessary.
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/58670521/193468704-09e1b21b-d226-4711-984b-383bac6a26f7.png">
-</p> <br/>
+</p>
+
 - <b>SMOTE and Undersampling combination : </b>By randomly deleting samples from the majority class population, the majority class
 is under-sampled until the minority class reaches a certain proportion of the majority
 class.
