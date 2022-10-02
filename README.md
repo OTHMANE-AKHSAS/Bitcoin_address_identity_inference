@@ -25,3 +25,14 @@ a simple we page where the user enters a Bitcoin address and expects a response.
 model in order to predict if the entered Bitcoin address is illicit or not.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <b>Containerization :</b> Using Docker we will containerize both parts of our app, so as to
 make it easy to run on any machine.<br/>
+
+Dataset
+-------------------------------------------------------------------------
+This dataset contains a mix of legitimate Bitcoin transactions and illicit ones (Ransomeware). This dataset was constructed using a graph representation of both licit and illicit ransomware transactions. It’s a directed weighted graph created from a set of transactions and
+input/output addresses. There are 2 types of nodes: address node and transaction node, and
+edges represent coin transfers between an address node and a transaction node, and edges
+do not link two nodes of the same type. Data from 2009 January to 2018 December was
+extracted from the bitcoin network with a time interval of 24 hours was used to construct
+this Bitcoin transaction graph. Transactions of less than 0.3 Bitcoins were excluded because
+ransom transactions are rarely below this threshold.
+<br/> <br/> You can access this dataset [here](https://archive.ics.uci.edu/ml/datasets/BitcoinHeistRansomwareAddressDataset).
